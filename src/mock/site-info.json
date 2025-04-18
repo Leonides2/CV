@@ -1,0 +1,59 @@
+
+
+{
+    "about": {
+        "title": "About",
+        "description": "This is a sample site created using the Vite + React + TypeScript template."
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "",
+        "email": "",
+        "phone": ""
+    },
+    "social": {
+        "title": "Social",
+        "description": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": ""
+    },
+    "services": {
+        "title": "Services",
+        "description": "",
+        "service1": {
+            "name": "Service 1",
+            "description": "Description of Service 1"
+        },
+        "service2": {
+            "name": "Service 2",
+            "description": "Description of Service 2"
+        },
+        "service3": {
+            "name": "Service 3",
+            "description": "Description of Service 3"
+        }
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "description": "",
+        "projects": [
+            {
+                "name": "Project 1",
+                "description": "Description of Project 1",
+                "link": "#"
+            },
+            {
+                "name": "Project 2",
+                "description": "Description of Project 2",
+                "link": "#"
+            },
+            {
+                "name": "Project 3",
+                "description": "Description of Project 3",
+                "link": "#"
+            }
+        ]
+    }
+
+}
