@@ -3,13 +3,13 @@
 {
     "about": {
         "title": "About",
-        "description": "This is a sample site created using the Vite + React + TypeScript template."
+        "description": "Si quieres saber más sobre mí, no dudes en contactarme."
     },
     "contact": {
-        "title": "Contact",
+        "title": "Contacto",
         "description": "",
-        "email": "",
-        "phone": ""
+        "email": "leonidesart@hotmail.com",
+        "phone": "+506 84870361"
     },
     "social": {
         "title": "Social",
