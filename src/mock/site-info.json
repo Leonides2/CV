@@ -1,59 +1,96 @@
-
-
 {
-    "about": {
-        "title": "About",
-        "description": "Si quieres saber más sobre mí, no dudes en contactarme."
-    },
-    "contact": {
-        "title": "Contacto",
-        "description": "",
-        "email": "leonidesart@hotmail.com",
-        "phone": "+506 84870361"
-    },
-    "social": {
-        "title": "Social",
-        "description": "",
-        "twitter": "",
-        "github": "",
-        "linkedin": ""
-    },
-    "services": {
-        "title": "Services",
-        "description": "",
-        "service1": {
-            "name": "Service 1",
-            "description": "Description of Service 1"
-        },
-        "service2": {
-            "name": "Service 2",
-            "description": "Description of Service 2"
-        },
-        "service3": {
-            "name": "Service 3",
-            "description": "Description of Service 3"
-        }
-    },
-    "portfolio": {
-        "title": "Portfolio",
-        "description": "",
-        "projects": [
-            {
-                "name": "Project 1",
-                "description": "Description of Project 1",
-                "link": "#"
-            },
-            {
-                "name": "Project 2",
-                "description": "Description of Project 2",
-                "link": "#"
-            },
-            {
-                "name": "Project 3",
-                "description": "Description of Project 3",
-                "link": "#"
+    "languages": [
+        {
+            "id": "es",
+            "name": "Español",
+            "content": {
+                "about": {
+                    "content": "Estudiante de Ingeniería en Sistemas con enfoque en desarrollo de sistemas escalables basados en microservicios. Experiencia en ASP.NET Core, React.js y Node.js, con interés en rendimiento y buenas prácticas de desarrollo.",
+                    "description": "Si quieres saber más sobre mí, no dudes en contactarme."
+                },
+                "contact": {
+                    "title": "Contacto",
+                    "description": "",
+                    "email": "leonidesart@hotmail.com",
+                    "email-label": "Correo electrónico",
+                    "phone": "+506 84870361",
+                    "phone-label": "Teléfono"
+                },
+                "social": {
+                    "title": "Social",
+                    "description": "",
+                    "twitter": "",
+                    "github": "",
+                    "linkedin": ""
+                },
+                "portfolio": {
+                    "title": "Portfolio",
+                    "description": "",
+                    "projects": [
+                        {
+                            "name": "Project 1",
+                            "description": "Description of Project 1",
+                            "link": "#"
+                        },
+                        {
+                            "name": "Project 2",
+                            "description": "Description of Project 2",
+                            "link": "#"
+                        },
+                        {
+                            "name": "Project 3",
+                            "description": "Description of Project 3",
+                            "link": "#"
+                        }
+                    ]
+                }
             }
-        ]
-    }
-
+        },
+        {
+            "id": "en",
+            "name": "English",
+            "content": {
+                "about": {
+                    "content": "Systems engineering student specializing in the development of scalable, microservices-based systems. Proficient ASP.NET Core, React.js, and Node.js, with a strong focus on performance optimization and software development best practices.",
+                    "description": "Be free to contact me"
+                },
+                "contact": {
+                    "title": "Contact",
+                    "description": "",
+                    "email": "leonidesart@hotmail.com",
+                    "email-label": "Email",
+                    "phone": "+506 84870361",
+                    "phone-label": "Phone"
+                },
+                "social": {
+                    "title": "Social",
+                    "description": "",
+                    "twitter": "",
+                    "github": "",
+                    "linkedin": ""
+                },
+                "portfolio": {
+                    "title": "Portfolio",
+                    "description": "",
+                    "projects": [
+                        {
+                            "name": "Project 1",
+                            "description": "Description of Project 1",
+                            "link": "#"
+                        },
+                        {
+                            "name": "Project 2",
+                            "description": "Description of Project 2",
+                            "link": "#"
+                        },
+                        {
+                            "name": "Project 3",
+                            "description": "Description of Project 3",
+                            "link": "#"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
 }

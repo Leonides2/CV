@@ -1,8 +1,57 @@
-
-
 {
-
-    "name": "José Leonardo Zúñiga Hernández",
-    "title": "Full Stack Developer",
-    "avatar": "/src/assets/1705286657989.png"
+    "languages": [
+        {
+            "id": "es",
+            "name": "Español",
+            "content": {
+                "name": "José Leonardo Zúñiga Hernández",
+                "title": "Full Stack Developer",
+                "avatar": "/src/assets/1705286657989.png"
+            }
+        },
+        {
+            "id": "en",
+            "name": "English",
+            "content": {
+                "name": "José Leonardo Zúñiga Hernández",
+                "title": "Full Stack Developer",
+                "avatar": "/src/assets/1705286657989.png"
+            }
+        }
+    ],
+    "stack": [
+        {
+            "id": 1,
+            "name": ".NetCore",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
+            "main-color" : "#623697",
+            "isHoverable": false,
+            "isRotable": false
+        },
+        {
+            "id": 2,
+            "name": "React",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+            "main-color" : "#5fd5f5",
+            "isHoverable": true,
+            "isRotable": true
+        }
+    ],
+    "programming_languages": [
+        {
+            "id": 1,
+            "name": "C#",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+        },
+        {
+            "id": 2,
+            "name": "Js",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+        },
+        {
+            "id": 3,
+            "name": "Ts",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+        }
+    ]
 }

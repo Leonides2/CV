@@ -1,0 +1,19 @@
+
+{
+    "content": [
+        {
+            "id": 1,
+            "name": "English",
+            "code": "en",
+            "flag": "https://flagcdn.com/us.svg",
+            "selector-text" : "Select Language"
+        },
+        {
+            "id": 2,
+            "name": "Spanish",
+            "code": "es",
+            "flag": "https://flagcdn.com/es.svg",
+            "selector-text" : "Seleccione el idioma"
+        }]
+  
+}
