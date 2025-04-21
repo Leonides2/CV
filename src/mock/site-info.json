@@ -218,15 +218,15 @@
                         },
                         {
                             "image" : "/projectsThumnail/p_2.jpg",
-                            "name": "Project 2",
-                            "description": "Description of Project 2",
-                            "link": "#"
+                            "name": "DemoFrontend",
+                            "description": "A project consisting of three parts, this being its very basic frontend. You can click on the (about) in the footer to learn more about it.",
+                            "link": "https://demoproject-frontend.onrender.com/"
                         },
                         {
                             "image" : "/projectsThumnail/p_3.jpg",
-                            "name": "Project 3",
-                            "description": "Description of Project 3",
-                            "link": "#"
+                            "name": "Purchase Generator",
+                            "description": "ASP.NETCore project that generates purchases for a microservices project. Created as part of a demonstration of integration between EventStore, IdentityServer, and dashboards.",
+                            "link": "https://github.com/Leonides2/GeneradorCompras"
                         }
                     ]
                 }
