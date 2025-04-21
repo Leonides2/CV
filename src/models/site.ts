@@ -39,6 +39,7 @@ export interface siteInfoData {
     title: string;
     description: string;
     projects: Array<{
+      image:string;
       name: string;
       description: string;
       link: string;

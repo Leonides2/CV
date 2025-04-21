@@ -13,6 +13,7 @@ import SocialMediaCardsContainer from "./components/molecules/SocialMediaCardsCo
 import Divider from "./components/atoms/Divider"
 import BlurAmountSelector from "./components/molecules/BlurAmountSelector"
 import EducationTimeline from "./components/molecules/EducationTimeline"
+import ProjectsContainer from "./components/molecules/ProjectsContainer"
 
 
 function App() {
@@ -79,6 +80,12 @@ function App() {
         <PageSection>
           <EducationTimeline/>
         </PageSection>
+        
+        <PageSection>
+
+          <ProjectsContainer/>
+
+        </PageSection>
 
         <PageSection>
 
@@ -87,6 +94,9 @@ function App() {
           <ContactDisplayer />
 
         </PageSection>
+
+        
+
         <PageSection>
           <BlurAmountSelector />
         </PageSection>

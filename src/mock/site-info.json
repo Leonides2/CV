@@ -92,22 +92,25 @@
                 ,
                 "portfolio": {
                     "title": "Portfolio",
-                    "description": "",
+                    "description": "En esta sección encontrarás una selección de proyectos que reflejan mi experiencia y habilidades en el desarrollo de software. Cada proyecto está diseñado para resolver problemas específicos y demostrar el uso de tecnologías modernas.",
                     "projects": [
                         {
-                            "name": "Project 1",
-                            "description": "Description of Project 1",
-                            "link": "#"
+                            "image" : "/projectsThumnail/p_1.jpg",
+                            "name": "Gestion TFG UNA",
+                            "description": "Proyecto de gestión de trabajos finales de graduación para la Universidad Nacional de Costa Rica. Enfocado en el uso interno del aplicativo.",
+                            "link": "https://gestiontfgunafront.5.181.218.251.sslip.io/"
                         },
                         {
-                            "name": "Project 2",
-                            "description": "Description of Project 2",
-                            "link": "#"
+                            "image" : "/projectsThumnail/p_2.jpg",
+                            "name": "DemoFrontend",
+                            "description": "Un proyecto que consta de tres partes, siendo este su frontend bastante básico. Puedes darle click en el (about) del footer para saber más al respecto.",
+                            "link": "https://demoproject-frontend.onrender.com/"
                         },
                         {
-                            "name": "Project 3",
-                            "description": "Description of Project 3",
-                            "link": "#"
+                            "image" : "/projectsThumnail/p_3.jpg",
+                            "name": "Generador de compras",
+                            "description": "Proyecto de ASP.NETCore que genera compras para un proyecto de microservicios. Realizado como parte de una demostración de conexión entre EventStore, IdentityServer y dashboards.",
+                            "link": "https://github.com/Leonides2/GeneradorCompras"
                         }
                     ]
                 }
@@ -205,19 +208,22 @@
                 ,
                 "portfolio": {
                     "title": "Portfolio",
-                    "description": "",
+                    "description": "This section showcases a selection of projects that highlight my experience and skills in software development. Each project is designed to address specific challenges and demonstrate the use of modern technologies.",
                     "projects": [
-                        {
-                            "name": "Project 1",
-                            "description": "Description of Project 1",
-                            "link": "#"
+                        {   
+                            "image" : "/projectsThumnail/p_1.jpg",
+                            "name": "Gestion TFG UNA",
+                            "description": "Graduation project management system for the National University of Costa Rica. Focused on internal application use.",
+                            "link": "https://gestiontfgunafront.5.181.218.251.sslip.io/"
                         },
                         {
+                            "image" : "/projectsThumnail/p_2.jpg",
                             "name": "Project 2",
                             "description": "Description of Project 2",
                             "link": "#"
                         },
                         {
+                            "image" : "/projectsThumnail/p_3.jpg",
                             "name": "Project 3",
                             "description": "Description of Project 3",
                             "link": "#"
