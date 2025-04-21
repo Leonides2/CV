@@ -24,7 +24,7 @@ const EducationTimeline = () => {
 
     return (
         <>
-            <div className="md:w-2/3 space-y-8">
+            <div className="md:w-full space-y-8">
                 <section>
                     <h2 className="text-2xl font-bold text-white mb-6">Educación</h2>
 
