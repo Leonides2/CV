@@ -25,7 +25,7 @@ const ProjectCard = (ob: projectcardprops) => {
                     height: "200px"
                 }}
             />
-            <div className="h-fit p-5 flex flex-col">
+            <div className="h-full p-5 flex flex-col">
                 <h3 className=" text-white  font-bold text-lg text-wrap">{ob.name}</h3>
                 <p className="text-white/80 font-semibold text-wrap text-ellipsis">{ob.description}</p>
                 <a className="text-white/60 text-wrap">{ob.link}</a>
