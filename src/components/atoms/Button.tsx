@@ -10,8 +10,12 @@ const Button = ({ callback, text }: {callback: ()=>void, text : string}) => {
     const {blurAmount } = UserPreferences;
 
     return (
-        <button onClick={callback} className={`bg-white/10 backdrop-blur-[${blurAmount}px] p-10 hover:bg-white/50 text-white font-bold py-2 px-4 rounded
-            mt-4 mb-4 transition-all duration-300 ease-in-out`}>
+        <button onClick={callback} className={`bg-white/10 p-10 hover:bg-white/50 text-white font-bold py-2 px-4 rounded
+            mt-4 mb-4 transition-all duration-300 ease-in-out`}
+            style={{
+                backdropFilter: `blur(${blurAmount}px)`,
+            }}
+            >
             {text}
         </button>
     )

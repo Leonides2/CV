@@ -21,10 +21,13 @@ const BlurAmountSelector = () => {
 
     return(
         <div className={`flex  flex-wrap gap-3 items-center justify-center w-full
-        h-auto bg-white/10 
-        backdrop-blur-[${blurAmount}px] p-2 
+        h-auto bg-white/10 p-2 
         rounded-lg
-        transition-all duration-300 ease-linear`}>
+        transition-all duration-300 ease-linear`}
+            style={{
+                backdropFilter: `blur(${blurAmount}px)`,
+            }}
+        >
             <label htmlFor="blur-selector" className="text-white"> Seleccione la cantidad de efector blur: </label>
             <input title="blur-selector" type="range" 
             className="appearance-none cursor-pointer bg-white h-1 rounded-lg"

@@ -32,7 +32,11 @@ function App() {
 
 
   return (
-    <div className={`bg-[url(${bgImage})] bg-repeat `}>
+    <div className={`bg-[url(${bgImage})] bg-repeat `}
+    style={{
+      backgroundImage: `url(${bgImage})`
+    }}
+    >
 
       <div className='flex flex-col gap-10 items-center justify-center p-10 
       max-sm:p-0
@@ -44,18 +48,21 @@ function App() {
       bg-gradient-to-r 
       from-indigo-500/40 
       to-purple-500/40 
-    '>
+    '
+   
+    >
 
         <LanguageSelector />
 
 
         <div className={`grid grid-cols-2 grid-rows-1 items-center justify-center
-        bg-white/10 backdrop-blur-[${blurAmount}px] p-10 rounded-lg  w-3/4 min-h-96
+        bg-white/10 p-10 rounded-lg  w-3/4 min-h-96
         mt-5
         max-md:flex max-md:flex-col max-md:grid-cols-none`}
           style={{
             gridTemplateColumns: "1fr 30%",
             gridTemplateRows: "1fr",
+            backdropFilter: `blur(${blurAmount}px)`,
           }}
         >
           <ProfileDisplayer />

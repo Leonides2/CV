@@ -30,7 +30,7 @@ const EducationTimeline = () => {
 
                     <div className="space-y-6">
                         {
-                            siteData?.education.map((item) => <EducationCard {...item} />)
+                            siteData?.education.map((item,index) => <EducationCard key={index} {...item} />)
                         }
                     </div>
                 </section>
@@ -39,7 +39,7 @@ const EducationTimeline = () => {
 
                     <div className="space-y-6">
                         {
-                            siteData?.experience.map((item) => <ExperienceCard {...item} />)
+                            siteData?.experience.map((item,index) => <ExperienceCard key={index}{...item} />)
                         }
                     </div>
                 </section>
@@ -48,7 +48,7 @@ const EducationTimeline = () => {
                     <h2 className="text-2xl font-bold text-white mb-6">Certificaciones</h2>
                     <div className="space-y-6">
                         {
-                            siteData?.["titles-certifications"].map((item) => <CertificateCard {...item} />)
+                            siteData?.["titles-certifications"].map((item,index) => <CertificateCard key={index} {...item} />)
                         }
                     </div>
                 </section>
