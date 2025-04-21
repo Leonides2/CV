@@ -42,7 +42,7 @@ function App() {
       <div className='flex flex-col gap-10 items-center justify-center p-10 
       max-sm:p-0
       w-full
-      h-auto
+      h-full
       min-h-dvh
       bg-fixed bg-cover bg-no-repeat bg-center 
 
@@ -80,7 +80,7 @@ function App() {
         <PageSection>
           <EducationTimeline/>
         </PageSection>
-        
+
         <PageSection>
 
           <ProjectsContainer/>
