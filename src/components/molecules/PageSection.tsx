@@ -23,11 +23,12 @@ const PageSection = ({gridCols = "1fr" , children, height = "96"}: PageSectionPr
                 bg-white/10 p-10 rounded-lg  w-3/4 min-h-${height}
                 max-md:flex max-md:flex-col max-md:grid-cols-none
                 max-md:p-4
+                
             `} style={{
                 gridTemplateColumns: gridCols,
                 gridTemplateRows: "1fr",
                 backdropFilter: `blur(${blurAmount}px)`,
-                
+                boxShadow: 'inset 1px 1px 4px #fff4'
             }}>
                 {
                     children

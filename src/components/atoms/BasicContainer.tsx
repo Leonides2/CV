@@ -13,7 +13,9 @@ const BasicContainer = ({ flexDirection = "col", gap = "0", children}: BasicCont
 
     return(
     <>
-         <div className={`container flex flex-${flexDirection} gap-[${gap}px] items-center justify-center`}>
+         <div className={`container flex flex-${flexDirection} items-center justify-center`}
+            style={{gap: `${gap}px`}}
+         >
             {children}
         </div>
     </>

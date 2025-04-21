@@ -32,7 +32,7 @@ function App() {
 
 
   return (
-    <div className={`bg-[url(${bgImage})] bg-repeat `}
+    <div className={`bg-repeat `}
     style={{
       backgroundImage: `url(${bgImage})`
     }}
@@ -63,6 +63,7 @@ function App() {
             gridTemplateColumns: "1fr 30%",
             gridTemplateRows: "1fr",
             backdropFilter: `blur(${blurAmount}px)`,
+            boxShadow: 'inset 1px 1px 4px #fff4'
           }}
         >
           <ProfileDisplayer />
@@ -90,7 +91,7 @@ function App() {
           <BlurAmountSelector />
         </PageSection>
 
-        <p className="container mx-auto text-center text-gray-300 mb-5">
+        <p className="container mx-auto text-center text-white mb-5">
           {siteData?.about.description}
         </p>
       </ div>

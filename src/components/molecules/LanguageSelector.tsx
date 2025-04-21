@@ -38,6 +38,7 @@ const LanguageSelector = () => {
         `}
         style={{
             backdropFilter: `blur(${blurAmount}px)`,
+             boxShadow: 'inset 1px 1px 4px #fff4'
         }}
         >
             <div className={`flex items-center justify-center gap-2 w-16 h-16 bg-white/10 
@@ -45,9 +46,10 @@ const LanguageSelector = () => {
                 onClick={() => setIsActive(!isActive)}
                 style={{
                     backdropFilter: `blur(${blurAmount}px)`,
+                     boxShadow: 'inset 1px 1px 4px #fff4'
                 }}
                 >
-                <span className="text-gray-700 font-bold">
+                <span className="text-white/80 font-bold">
                     {
                         languageData?.code.toUpperCase()
                     }
@@ -58,15 +60,17 @@ const LanguageSelector = () => {
                             rounded-lg`}
                             style={{
                                 backdropFilter: `blur(${blurAmount}px)`,
+                                 boxShadow: 'inset 1px 1px 4px #fff4'
                             }}
                             >
-                <label htmlFor="language" className="text-gray-700 font-bold mr-2">
+                <label htmlFor="language" className="text-white/80 font-bold mr-2">
                     {`${languageData?.["selector-text"]}:`}    
                 </label>
  
                 <select className={`text-gray-700 pt-2 pb-2 pr-4 pl-4 rounded bg-white/60 border-none`} 
                     style={{
                         backdropFilter: `blur(${blurAmount}px)`,
+                         boxShadow: 'inset 1px 1px 4px #fff4'
                     }}
                     
                     value={language} onChange={(event) => handleLanguage(event)}>

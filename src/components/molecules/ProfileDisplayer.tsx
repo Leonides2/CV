@@ -22,8 +22,8 @@ const ProfileDisplayer = () => {
     return (
         <>
             <div className="flex flex-col items-center justify-center">
-                <h1 className='text-2xl font-bold text-zinc-200 text-center'> {profileData?.content.name}</h1>
-                <h2 className='text-lg font-bold text-zinc-200'> {profileData?.content.title}</h2>
+                <h1 className='text-2xl font-bold text-white/80 text-center'> {profileData?.content.name}</h1>
+                <h2 className='text-lg font-bold text-white/80'> {profileData?.content.title}</h2>
 
                 <div className="flex flex-row  flex-wrap items-center justify-center 
                     gap-10 w-full mt-7">
