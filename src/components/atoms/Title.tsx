@@ -1,18 +1,25 @@
 
-const levelConfig: {[key: number]: string} = {
-    1 : "2xl",
-    2 : "xl"
+interface TitleProps {
+    level: "xl" | "2xl",
+    text? : string,
+    title?: string,
+    isPair?: boolean
 }
 
 
-const Title = ({level, text, title}:{level:number, text: string, title:string})=>{
+const Title = ({level, text = "Placeholder", title, isPair = true}: TitleProps)=>{
 
 
     return(
         <>
-            <div className='flex flex-row items-center gap-5  w-1/2 max-w-3/4 '>
-                <h1 className={`text-${levelConfig[level]} font-bold text-zinc-200`}> {title}:</h1>
-                <h1 className={`text-${levelConfig[level]} font-bold text-zinc-200`}> {text}</h1>
+            <div className={`container flex flex-row items-center  text-wrap ${ isPair ? `gap-5` : `justify-center`} mb-5 w-1/2 max-w-3/4 `}>
+                
+                <h1 className={`text-${level} font-bold text-zinc-200`}> 
+                    {title + `${isPair ? ": " : ""}`}
+                </h1>
+                {
+                    isPair ? <h1 className={`text-${level} font-bold text-zinc-200 text-wrap`}> {text} </h1> : <></>
+                }
             </div>
         </>
     )

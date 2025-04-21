@@ -5,7 +5,7 @@ interface UserPreferencesContextProps {
     setThemeColor: (themeColor: string) => void;
     blur: boolean;
     setBlur: (blur: boolean) => void;
-    blurAmount: number;
-    setBlurAmount: (blurAmount: number) => void;
+    blurAmount: string;
+    setBlurAmount: (blurAmount: string) => void;
 }
 export default UserPreferencesContextProps;

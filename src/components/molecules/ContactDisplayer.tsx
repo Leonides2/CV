@@ -2,7 +2,6 @@ import { useContext, useEffect, useState } from "react";
 import BasicContainer from "../atoms/BasicContainer";
 import Button from "../atoms/Button";
 import TextContainer from "../atoms/TextContainer";
-import Title from "../atoms/Title";
 import { ContactData } from "../../models/profile";
 import UserPreferencesContext from "../../context/UserPreferencesContext";
 import info from "../../mock/site-info.json"
@@ -29,9 +28,12 @@ const ContactDisplayer = () => {
                 <h1 className='text-2xl font-bold text-zinc-200 mb-5'> {contactData?.title}</h1>
 
                 <TextContainer>
-                    <Title level={2} title={`${contactData?.["email-label"]}`} text={contactData ? contactData.email : ""} />
-                    <Title level={2} title={`${contactData?.["phone-label"]}`} text={contactData? contactData.phone : ""} />
-
+                    <p className="container mx-auto text-left text-white mb-5 text-xl">
+                        {contactData?.["email-label"]}: {contactData?.email}
+                    </p>
+                    <p className="container mx-auto text-left text-white mb-5 text-xl">
+                        {contactData?.["phone-label"]}: {contactData?.phone}
+                    </p>
                     <Button callback={() => { window.open(`mailto:${contactData?.email}`, "_blank") }}
                         text="Enviame un correo"
                     />

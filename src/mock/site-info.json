@@ -17,12 +17,79 @@
                     "phone-label": "Teléfono"
                 },
                 "social": {
-                    "title": "Social",
+                    "title": "Redes sociales",
                     "description": "",
-                    "twitter": "",
-                    "github": "",
-                    "linkedin": ""
+                    "accounts": [
+                        {
+                            "name": "GitHub",
+                            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+                            "link": "https://github.com/Leonides2",
+                            "description": ""
+                        },
+                        {
+                            "name": "LinkledIn",
+                            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg",
+                            "link": "https://www.linkedin.com/in/jos%C3%A9-leonardo-z%C3%BA%C3%B1iga-hern%C3%A1ndez-089b18240/",
+                            "description": ""
+                        }
+                    ]
                 },
+                "education": [
+                    {
+                        "startDate": "2022",
+                        "endDate": "Presente",
+                        "institution": "Universidad Nacional de Costa Rica",
+                        "title": "Ingeniería en sistemas de información",
+                        "description": "Carrera Universitaria"
+                    }
+                ],
+                "experience": [
+                    {
+                        "startDate": "Junio 2023",
+                        "endDate": "Julio 2023",
+                        "institution": "Colegio Humanístico Costarricense de la Universidad Nacional",
+                        "title": "Tutor",
+                        "description": "Descanso profesional",
+                        "technologies": ["MicroPython"]
+                    },
+                    {
+                        "startDate": "Marzo 2024",
+                        "endDate": "Presente",
+                        "institution": "Universidad Nacional de Costa Rica",
+                        "title": "Estudiante asistente",
+                        "description": "Medio tiempo",
+                        "technologies": ["Html", "Css", "Javascript", "Ubuntu Server", "Joomla"]
+                    },
+                    {
+                        "startDate": "Marzo 2024",
+                        "endDate": "Presente",
+                        "institution": "Universidad Nacional de Costa Rica",
+                        "title": "Desarrollador Full Stack",
+                        "description": "Trabajo de aprendizaje",
+                        "technologies": ["React", "Css", "ASP.NetCore" , "Typescript", "Ubuntu Server", "MySQL", "Azure Devops"]
+                    }
+                ],
+                "titles-certifications": [
+                    {
+                        "IssuedDate": "Mayo 2024",
+                        "institution": "SCRUMstudy",
+                        "title": "Scrum Fundamentals Certified (SFC)",
+                        "link": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1032005"
+                    },
+                    {
+                        "IssuedDate": "Octubre 2024",
+                        "institution": "UiPath",
+                        "title": "RPA Developer Foundation - Spanish",
+                        "link": "https://www.linkedin.com/in/josé-leonardo-zúñiga-hernández-089b18240/details/certifications/507327923/multiple-media-viewer/?locale=en_US&profileId=ACoAADv3S2kBcAA8Xcu_eJO9bZG95K1fmi7xx-k&treasuryMediaId=1738341609179"
+                    },
+                    {
+                        "IssuedDate": "Enero 2025",
+                        "institution": "EF SET",
+                        "title": "EF SET English Certificate 64/100 (C1 Advanced)",
+                        "link": "https://cert.efset.org/en/cJLyW9"
+                    }
+                ]
+                ,
                 "portfolio": {
                     "title": "Portfolio",
                     "description": "",
@@ -63,12 +130,79 @@
                     "phone-label": "Phone"
                 },
                 "social": {
-                    "title": "Social",
+                    "title": "Social Media",
                     "description": "",
-                    "twitter": "",
-                    "github": "",
-                    "linkedin": ""
+                    "accounts": [
+                        {
+                            "name": "GitHub",
+                            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+                            "link": "https://github.com/Leonides2",
+                            "description": ""
+                        },
+                        {
+                            "name": "LinkledIn",
+                            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg",
+                            "link": "https://www.linkedin.com/in/jos%C3%A9-leonardo-z%C3%BA%C3%B1iga-hern%C3%A1ndez-089b18240/",
+                            "description": ""
+                        }
+                    ]
                 },
+                "education": [
+                    {
+                        "startDate": "2022",
+                        "endDate": "Present",
+                        "institution": "National University of Costa Rica",
+                        "title": "System Engineering",
+                        "description": "College Career"
+                    }
+                ],
+                "experience": [
+                    {
+                        "startDate": "June 2023",
+                        "endDate": "July 2023",
+                        "institution": "Humanistic High School of the National University of Costa Rica ",
+                        "title": "Tutor",
+                        "description": "Career Break",
+                        "technologies": ["MicroPython"]
+                    },
+                    {
+                        "startDate": "March 2024",
+                        "endDate": "Present",
+                        "institution": "National University of Costa Rica",
+                        "title": "Assistant Student",
+                        "description": "Part-time",
+                        "technologies": ["Html", "Css", "Javascript", "Ubuntu Server", "Joomla"]
+                    },
+                    {
+                        "startDate": "March 2024",
+                        "endDate": "Present",
+                        "institution": "National University of Costa Rica",
+                        "title": "Full Stack Developer",
+                        "description": "Apprenticeship",
+                        "technologies": ["React", "Css", "ASP.NetCore" , "Typescript", "Ubuntu Server", "MySQL", "Azure Devops"]
+                    }
+                ],
+                "titles-certifications": [
+                    {
+                        "IssuedDate": "May 2024",
+                        "institution": "SCRUMstudy",
+                        "title": "Scrum Fundamentals Certified (SFC)",
+                        "link": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1032005"
+                    },
+                    {
+                        "IssuedDate": "Oct 2024",
+                        "institution": "UiPath",
+                        "title": "RPA Developer Foundation - Spanish",
+                        "link": "https://www.linkedin.com/in/josé-leonardo-zúñiga-hernández-089b18240/details/certifications/507327923/multiple-media-viewer/?locale=en_US&profileId=ACoAADv3S2kBcAA8Xcu_eJO9bZG95K1fmi7xx-k&treasuryMediaId=1738341609179"
+                    },
+                    {
+                        "IssuedDate": "Jan 2025",
+                        "institution": "EF SET",
+                        "title": "EF SET English Certificate 64/100 (C1 Advanced)",
+                        "link": "https://cert.efset.org/en/cJLyW9"
+                    }
+                ]
+                ,
                 "portfolio": {
                     "title": "Portfolio",
                     "description": "",

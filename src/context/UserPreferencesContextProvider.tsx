@@ -7,7 +7,7 @@ const UserPreferencesProvider = ({ children } : {children: ReactNode}) => {
     const [language, setLanguage] = useState<string>("es");
     const [themeColor, setThemeColor] = useState<string>("blue");
     const [blur, setBlur] = useState<boolean>(false);
-    const [blurAmount, setBlurAmount] = useState<number>(0);
+    const [blurAmount, setBlurAmount] = useState<string>("3");
 
     useEffect(() => {
         const storedLanguage = localStorage.getItem("language");
@@ -18,7 +18,7 @@ const UserPreferencesProvider = ({ children } : {children: ReactNode}) => {
         if (storedLanguage) setLanguage(storedLanguage);
         if (storedThemeColor) setThemeColor(storedThemeColor);
         if (storedBlur) setBlur(storedBlur === "true");
-        if (storedBlurAmount) setBlurAmount(Number(storedBlurAmount));
+        if (storedBlurAmount) setBlurAmount(storedBlurAmount);
     }, []);
 
 
