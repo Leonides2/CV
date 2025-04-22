@@ -57,6 +57,7 @@ const ProfileDisplayer = () => {
             onClick={()=>{
                 let link = document.createElement('a');
                 link.setAttribute('href', './CV Spanish.pdf')
+                link.setAttribute('target', '_blank')
                 document.body.append(link);
 
                 link.click();
