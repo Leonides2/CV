@@ -40,18 +40,27 @@
     "programming_languages": [
         {
             "id": 1,
-            "name": "C#",
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+            "name": "Csharp",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+            "main-color" : "#623697",
+            "isHoverable": false,
+            "isRotable": false
         },
         {
             "id": 2,
-            "name": "Js",
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+            "name": "Javascript",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+            "main-color" : "#623697",
+            "isHoverable": false,
+            "isRotable": false
         },
         {
             "id": 3,
-            "name": "Ts",
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+            "name": "Typescript",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+            "main-color" : "#623697",
+            "isHoverable": false,
+            "isRotable": false
         }
     ]
 }

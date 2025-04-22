@@ -16,6 +16,7 @@ import EducationTimeline from "./components/molecules/EducationTimeline"
 import ProjectsContainer from "./components/molecules/ProjectsContainer"
 import { GetThemeColor } from "./models/const"
 import ThemeSelector from "./components/molecules/ThemeSelector"
+import Skills from "./components/molecules/Skills"
 
 
 function App() {
@@ -75,6 +76,10 @@ function App() {
           <p className="container mx-auto text-left text-white/80 mb-5 text-xl">
             {siteData?.about.content}
           </p>
+        </PageSection>
+
+        <PageSection height="fit">
+          <Skills/>
         </PageSection>
 
         <PageSection>
