@@ -5,7 +5,7 @@ import UserPreferencesContext from "./UserPreferencesContext";
 const UserPreferencesProvider = ({ children } : {children: ReactNode}) => {
     
     const [language, setLanguage] = useState<string>("es");
-    const [themeColor, setThemeColor] = useState<string>("blue");
+    const [themeColor, setThemeColor] = useState<string>("indigo");
     const [blur, setBlur] = useState<boolean>(false);
     const [blurAmount, setBlurAmount] = useState<string>("3");
 

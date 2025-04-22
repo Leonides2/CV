@@ -11,30 +11,37 @@ export interface siteInfoData {
     description: string;
     accounts: Array<SocialMediaData>;
   };
-  education: Array<{
+  education:{ 
+  label: string,
+  content:Array<{
     startDate: string,
     endDate: string,
     institution: string,
     title: string,
     description: string
-  }>;
+  }>};
 
-  experience: Array<
-    {
+  experience: {
+    label: string,
+    content:
+    Array<{
       startDate: string,
       endDate: string,
       institution: string,
       title: string,
       description: string,
       technologies: Array<string>
-    }>,
-  "titles-certifications": Array<
+    }>
+  },
+  "titles-certifications": {
+    label: string,
+    content: Array<
     {
       IssuedDate: string,
       institution: string,
       title: string,
       link: string
-    }>
+    }>}
   portfolio: {
     title: string;
     description: string;
@@ -45,6 +52,8 @@ export interface siteInfoData {
       link: string;
     }>;
   };
+  linkButtonLabel: string,
+  emailButtonLabel: string
 }
 
 export interface SocialMediaData {

@@ -26,29 +26,29 @@ const EducationTimeline = () => {
         <>
             <div className="md:w-full space-y-8">
                 <section>
-                    <h2 className="text-2xl font-bold text-white mb-6">Educación</h2>
+                    <h2 className="text-2xl font-bold text-white mb-6">{siteData?.education.label}</h2>
 
                     <div className="space-y-6">
                         {
-                            siteData?.education.map((item,index) => <EducationCard key={index} {...item} />)
+                            siteData?.education.content.map((item,index) => <EducationCard key={index} {...item} />)
                         }
                     </div>
                 </section>
                 <section>
-                    <h2 className="text-2xl font-bold text-white mb-6">Experiencia</h2>
+                    <h2 className="text-2xl font-bold text-white mb-6">{siteData?.experience.label}</h2>
 
                     <div className="space-y-6">
                         {
-                            siteData?.experience.map((item,index) => <ExperienceCard key={index}{...item} />)
+                            siteData?.experience.content.map((item,index) => <ExperienceCard key={index}{...item} />)
                         }
                     </div>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-bold text-white mb-6">Certificaciones</h2>
+                    <h2 className="text-2xl font-bold text-white mb-6">{siteData?.["titles-certifications"].label}</h2>
                     <div className="space-y-6">
                         {
-                            siteData?.["titles-certifications"].map((item,index) => <CertificateCard key={index} {...item} />)
+                            siteData?.["titles-certifications"].content.map((item,index) => <CertificateCard key={index} {...item} />)
                         }
                     </div>
                 </section>

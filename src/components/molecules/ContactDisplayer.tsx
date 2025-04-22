@@ -5,10 +5,14 @@ import TextContainer from "../atoms/TextContainer";
 import { ContactData } from "../../models/profile";
 import UserPreferencesContext from "../../context/UserPreferencesContext";
 import info from "../../mock/site-info.json"
+import { siteInfoData } from "../../models/site";
 
 const ContactDisplayer = () => {
 
     const [contactData, setContactData] = useState<ContactData>()
+    const [siteData, setSiteData] = useState<siteInfoData>();
+    let languagesArray_1 = info.languages;
+   
     const UserPreferences = useContext(UserPreferencesContext);
 
     let languagesArray = info.languages;
@@ -19,6 +23,10 @@ const ContactDisplayer = () => {
 
     useEffect(() => {
         setContactData(languagesArray.find(la => la.id === language)?.content.contact);
+    }, [language])
+
+    useEffect(() => {
+        setSiteData(languagesArray_1.find(la => la.id === language)?.content)
     }, [language])
 
     return (
@@ -35,7 +43,7 @@ const ContactDisplayer = () => {
                         {contactData?.["phone-label"]}: {contactData?.phone}
                     </p>
                     <Button callback={() => { window.open(`mailto:${contactData?.email}`, "_blank") }}
-                        text="Enviame un correo"
+                        text={siteData ?  siteData.emailButtonLabel : "" }
                     />
 
                 </TextContainer>

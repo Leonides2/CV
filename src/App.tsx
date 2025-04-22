@@ -14,6 +14,8 @@ import Divider from "./components/atoms/Divider"
 import BlurAmountSelector from "./components/molecules/BlurAmountSelector"
 import EducationTimeline from "./components/molecules/EducationTimeline"
 import ProjectsContainer from "./components/molecules/ProjectsContainer"
+import { GetThemeColor } from "./models/const"
+import ThemeSelector from "./components/molecules/themeSelector"
 
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
 
   if (!UserPreferences) throw console.error();
 
-  const { language, blurAmount } = UserPreferences;
+  const { language, blurAmount, themeColor } = UserPreferences;
 
   useEffect(() => {
     setSiteData(languagesArray.find(la => la.id === language)?.content)
@@ -39,7 +41,7 @@ function App() {
     }}
     >
 
-      <div className='flex flex-col gap-10 items-center justify-center p-10 
+      <div className={`flex flex-col gap-10 items-center justify-center p-10 
       max-sm:p-0
       w-full
       h-full
@@ -47,10 +49,8 @@ function App() {
       bg-fixed bg-cover bg-no-repeat bg-center 
 
       bg-gradient-to-r 
-      from-indigo-500/40 
-      to-purple-500/40 
-    '
-   
+      transition-colors duration-500
+      ${ GetThemeColor(themeColor) }`} 
     >
 
         <LanguageSelector />
@@ -98,7 +98,9 @@ function App() {
         
 
         <PageSection>
+          <h2 className="text-2xl font-bold text-white text-center mb-6 text-wrap">{"Theme selector"}</h2>
           <BlurAmountSelector />
+          <ThemeSelector/>
         </PageSection>
 
         <p className="container mx-auto text-center text-white mb-5">

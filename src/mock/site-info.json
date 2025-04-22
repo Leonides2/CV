@@ -34,7 +34,9 @@
                         }
                     ]
                 },
-                "education": [
+                "education": { 
+                "label": "Educación",
+                "content" :[
                     {
                         "startDate": "2022",
                         "endDate": "Presente",
@@ -42,8 +44,10 @@
                         "title": "Ingeniería en sistemas de información",
                         "description": "Carrera Universitaria"
                     }
-                ],
-                "experience": [
+                ]},
+                "experience": {
+                "label": "Experiencia",
+                "content" :[
                     {
                         "startDate": "Junio 2023",
                         "endDate": "Julio 2023",
@@ -68,8 +72,10 @@
                         "description": "Trabajo de aprendizaje",
                         "technologies": ["React", "Css", "ASP.NetCore" , "Typescript", "Ubuntu Server", "MySQL", "Azure Devops"]
                     }
-                ],
-                "titles-certifications": [
+                ]},
+                "titles-certifications": {
+                "label": "Certificaciones",
+                "content" :[
                     {
                         "IssuedDate": "Mayo 2024",
                         "institution": "SCRUMstudy",
@@ -88,8 +94,7 @@
                         "title": "EF SET English Certificate 64/100 (C1 Advanced)",
                         "link": "https://cert.efset.org/en/cJLyW9"
                     }
-                ]
-                ,
+                ]},
                 "portfolio": {
                     "title": "Portfolio",
                     "description": "En esta sección encontrarás una selección de proyectos que reflejan mi experiencia y habilidades en el desarrollo de software. Cada proyecto está diseñado para resolver problemas específicos y demostrar el uso de tecnologías modernas.",
@@ -113,8 +118,11 @@
                             "link": "https://github.com/Leonides2/GeneradorCompras"
                         }
                     ]
-                }
+                },
+                "linkButtonLabel": "Da clic aquí",
+                "emailButtonLabel" : "Enviame un correo"
             }
+            
         },
         {
             "id": "en",
@@ -150,7 +158,9 @@
                         }
                     ]
                 },
-                "education": [
+                "education": { 
+                "label": "Education",
+                "content" :[
                     {
                         "startDate": "2022",
                         "endDate": "Present",
@@ -158,8 +168,10 @@
                         "title": "System Engineering",
                         "description": "College Career"
                     }
-                ],
-                "experience": [
+                ]},
+                "experience": {
+                "label": "Experience",
+                "content" : [
                     {
                         "startDate": "June 2023",
                         "endDate": "July 2023",
@@ -184,8 +196,11 @@
                         "description": "Apprenticeship",
                         "technologies": ["React", "Css", "ASP.NetCore" , "Typescript", "Ubuntu Server", "MySQL", "Azure Devops"]
                     }
-                ],
-                "titles-certifications": [
+                ]
+            },
+                "titles-certifications":{ 
+                "label": "Certificates",
+                "content" :[
                     {
                         "IssuedDate": "May 2024",
                         "institution": "SCRUMstudy",
@@ -204,7 +219,7 @@
                         "title": "EF SET English Certificate 64/100 (C1 Advanced)",
                         "link": "https://cert.efset.org/en/cJLyW9"
                     }
-                ]
+                ]}
                 ,
                 "portfolio": {
                     "title": "Portfolio",
@@ -229,8 +244,11 @@
                             "link": "https://github.com/Leonides2/GeneradorCompras"
                         }
                     ]
-                }
+                },
+                "linkButtonLabel": "Click here",
+                "emailButtonLabel" : "Enviame un correo"
             }
+            
         }
     ]
 }
