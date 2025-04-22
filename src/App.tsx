@@ -15,7 +15,7 @@ import BlurAmountSelector from "./components/molecules/BlurAmountSelector"
 import EducationTimeline from "./components/molecules/EducationTimeline"
 import ProjectsContainer from "./components/molecules/ProjectsContainer"
 import { GetThemeColor } from "./models/const"
-import ThemeSelector from "./components/molecules/themeSelector"
+import ThemeSelector from "./components/molecules/ThemeSelector"
 
 
 function App() {
