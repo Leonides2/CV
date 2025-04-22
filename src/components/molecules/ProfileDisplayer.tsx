@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import profile from "../../mock/profile.json"
 import UserPreferencesContext from "../../context/UserPreferencesContext";
 import { ProfileData } from "../../models/profile";
+import download from "../../assets/download-svg.png"
 import LanguageIcons from "../atoms/LanguageIcons";
 
 const ProfileDisplayer = () => {
@@ -49,6 +50,20 @@ const ProfileDisplayer = () => {
                     src={profileData?.content.avatar}
                 />
 
+            </div>
+
+            <div className="fixed left-2 bottom-2 flex items-center justify-center overflow-clip aspect-square rounded-lg size-fit
+                bg-white/20 m-2 p-3 transition-colors duration-300 cursor-pointer hover:bg-white/40"
+            onClick={()=>{
+                let link = document.createElement('a');
+                link.setAttribute('href', './CV Spanish.pdf')
+                document.body.append(link);
+
+                link.click();
+
+                document.body.removeChild(link);
+            }}>
+                <img src={download} className="size-5"></img>
             </div>
         </>
     )
