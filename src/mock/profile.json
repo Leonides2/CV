@@ -7,7 +7,9 @@
                 "name": "José Leonardo Zúñiga Hernández",
                 "title": "Full Stack Developer",
                 "avatar": "https://i.postimg.cc/gkMBTF34/1705286657989.png"
-            }
+            },
+            "cv": "/CV Spanish.pdf",
+            "cv-download-label": "Descargar CV"
         },
         {
             "id": "en",
@@ -16,7 +18,9 @@
                 "name": "José Leonardo Zúñiga Hernández",
                 "title": "Full Stack Developer",
                 "avatar": "https://i.postimg.cc/gkMBTF34/1705286657989.png"
-            }
+            },
+            "cv": "/CV English.pdf",
+            "cv-download-label": "Download CV"
         }
     ],
     "stack": [

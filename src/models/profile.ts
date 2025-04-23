@@ -8,6 +8,8 @@ export type ProfileData = {
             title: string,
             avatar: string
         }
+        cv: string,
+         "cv-download-label":string
 }
 
 export type ContactData = {

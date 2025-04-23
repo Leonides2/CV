@@ -44,27 +44,39 @@ const ProfileDisplayer = () => {
             
 
             <div className="flex items-center justify-center overflow-clip aspect-square rounded-full size-fit
-                bg-white/90 m-2 max-sm:mt-10">
+                bg-white/90 m-2 max-sm:mt-10 max-sm:mb-10">
                 <img
-                    className="container rounded-full z-10 max-sm:bg-none size-52 max-sm:size-36"
+                    className="container rounded-full z-10 max-sm:bg-none size-52 max-lg:size-40 max-sm:size-36"
                     src={profileData?.content.avatar}
                 />
 
             </div>
 
-            <div className="fixed left-2 bottom-2 flex items-center justify-center overflow-clip aspect-square rounded-lg size-fit
-                bg-white/20 m-2 p-3 transition-colors duration-300 cursor-pointer hover:bg-white/40"
+            <div className="fixed left-2 bottom-2 flex items-start 
+                justify-center overflow-clip aspect-square rounded-lg 
+                w-32 h-10.5 gap-2
+                
+                bg-white/20 m-2 p-3 transition-colors 
+                duration-300 cursor-pointer hover:bg-white/40"
             onClick={()=>{
                 let link = document.createElement('a');
-                link.setAttribute('href', './CV Spanish.pdf')
+                link.setAttribute('href', `${ new URL(profileData ? profileData.cv :"", import.meta.url).href}`)
                 link.setAttribute('target', '_blank')
+                link.setAttribute('download', 'CV.pdf')
                 document.body.append(link);
 
                 link.click();
 
                 document.body.removeChild(link);
             }}>
-                <img src={download} className="size-5"></img>
+                <img src={download} className="size-5"></img> 
+                <p className="text-white/80 text-wrap text-xs"
+                    style={{
+                        height: "1.25rem"
+                    }}
+                >
+                    {profileData?.["cv-download-label"]}
+                </p>
             </div>
         </>
     )
