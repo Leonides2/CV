@@ -20,15 +20,15 @@ const BlurAmountSelector = () => {
     }
 
     return(
-        <div className={`flex  flex-wrap gap-3 items-center justify-center w-full
-        h-auto bg-white/10 p-2 
+        <div className={`flex  flex-wrap gap-3 items-start justify-center w-full
+        h-auto p-2 
+        flex-col
         rounded-lg
         transition-all duration-300 ease-linear`}
-            style={{
-                backdropFilter: `blur(${blurAmount}px)`,
-            }}
         >
-            <label htmlFor="blur-selector" className="text-white"> Seleccione la cantidad de efector blur: </label>
+            <p className="text-white"> Seleccione la cantidad de efector blur: </p>
+            
+            <div className="flex flex-wrap items-center gap-2">
             <input title="blur-selector" type="range" 
             className="appearance-none cursor-pointer bg-white h-1 rounded-lg"
             value={blurAmount} 
@@ -39,6 +39,7 @@ const BlurAmountSelector = () => {
             <p className="text-white">
                 {(Math.round(Number(blurAmount)/12 * 100))}%
             </p>
+            </div>
         </div>
     )
 }

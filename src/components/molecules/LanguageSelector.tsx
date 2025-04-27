@@ -3,9 +3,13 @@ import UserPreferencesContext from "../../context/UserPreferencesContext";
 import languages from "../../mock/languages.json"
 import { LanguageData } from "../../models/languages";
 
+interface languageProps {
+    _isActive?: boolean;
+}
 
-const LanguageSelector = () => {
-    const [isActive, setIsActive] = useState(false);
+
+const LanguageSelector = ( {_isActive = false}: languageProps) => {
+    const [isActive, setIsActive] = useState(_isActive);
     const [languageData, setLanguageData] = useState<LanguageData>()
     const UserPreferences = useContext(UserPreferencesContext);
 
@@ -29,7 +33,7 @@ const LanguageSelector = () => {
     }
 
     return (
-        <div className={`sticky right-5 bottom-3 z-20 flex gap-3 items-center justify-center ${isActive ? `w-fit` :`w-24`} 
+        <div className={`sticky right-5 top-3 z-20 flex gap-3 items-center justify-center ${isActive ? `w-fit` :`w-24`} 
         h-auto bg-white/10 
         p-2 
         rounded-lg
@@ -43,7 +47,7 @@ const LanguageSelector = () => {
         >
             <div className={`flex items-center justify-center gap-2 w-16 h-16 bg-white/10 
                 p-2 rounded-lg cursor-pointer hover:bg-white/20 transition-all duration-300 ease-in-out`}
-                onClick={() => setIsActive(!isActive)}
+                onClick={() => !_isActive ? setIsActive(!isActive) : null}
                 style={{
                     backdropFilter: `blur(${blurAmount}px)`,
                      boxShadow: 'inset 1px 1px 4px #fff4'

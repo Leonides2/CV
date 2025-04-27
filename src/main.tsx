@@ -7,6 +7,7 @@ import UserPreferencesProvider from './context/UserPreferencesContextProvider.ts
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <UserPreferencesProvider>
+      
       <App />
     </UserPreferencesProvider>
   </StrictMode>,
